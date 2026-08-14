@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --ink: #152432;
-  --muted: #596874;
-  --paper: #f2f0e9;
-  --paper-bright: #faf9f5;
-  --line: rgba(21, 36, 50, 0.16);
-  --blue: #0755d6;
-  --cyan: #4ddbc5;
-  --night: #10202e;
+  --ink: #17212b;
+  --muted: #5d6872;
+  --paper: #f7f7f4;
+  --paper-bright: #ffffff;
+  --line: rgba(23, 33, 43, 0.17);
+  --blue: #244f7a;
+  --cyan: #9eb6c8;
+  --night: #182633;
 }
 
 * {
@@ -46,13 +46,10 @@ a {
 }
 
 .wordmark {
-  font-size: 1.35rem;
-  font-weight: 780;
-  letter-spacing: -0.06em;
-}
-
-.wordmark span {
-  color: var(--blue);
+  font-size: 0.86rem;
+  font-weight: 680;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .nav-links {
@@ -78,12 +75,12 @@ a {
 }
 
 .hero {
-  min-height: 690px;
+  min-height: 650px;
   display: grid;
   grid-template-columns: 1.17fr 0.83fr;
   gap: 86px;
   align-items: center;
-  padding: 78px 0 92px;
+  padding: 76px 0 88px;
 }
 
 .kicker,
@@ -101,17 +98,18 @@ a {
 .hero h1 {
   margin: 25px 0 30px;
   max-width: 780px;
-  font-size: clamp(3.8rem, 7.3vw, 7.05rem);
-  line-height: 0.91;
-  letter-spacing: -0.075em;
-  font-weight: 560;
+  font-size: clamp(3.5rem, 6.4vw, 6.35rem);
+  line-height: 0.96;
+  letter-spacing: -0.055em;
+  font-weight: 610;
 }
 
 .hero h1 em {
   color: var(--blue);
-  font-family: Georgia, "Times New Roman", serif;
-  font-weight: 400;
-  letter-spacing: -0.055em;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: inherit;
+  letter-spacing: inherit;
 }
 
 .hero-intro {
@@ -143,12 +141,12 @@ a {
   border: 1px solid var(--ink);
   font-size: 0.85rem;
   font-weight: 620;
-  transition: transform 160ms ease, background 160ms ease, color 160ms ease;
+  transition: background 160ms ease, color 160ms ease;
 }
 
 .button:hover,
 .button:focus-visible {
-  transform: translateY(-2px);
+  background: var(--paper-bright);
 }
 
 .button-primary {
@@ -173,13 +171,14 @@ a {
   overflow: hidden;
   background: var(--night);
   color: white;
-  box-shadow: 0 30px 70px rgba(16, 32, 46, 0.17);
+  border: 1px solid rgba(23, 33, 43, 0.18);
+  box-shadow: 0 18px 44px rgba(16, 32, 46, 0.1);
 }
 
 .network-grid {
   position: absolute;
   inset: 0;
-  opacity: 0.2;
+  opacity: 0.12;
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.18) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.18) 1px, transparent 1px);
@@ -191,7 +190,7 @@ a {
   content: "";
   position: absolute;
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+  background: rgba(255, 255, 255, 0.34);
   transform-origin: left center;
 }
 
@@ -214,19 +213,20 @@ a {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: var(--cyan);
-  box-shadow: 0 0 0 6px rgba(77, 219, 197, 0.14), 0 0 24px rgba(77, 219, 197, 0.65);
+  background: #c5d2dc;
+  border: 2px solid var(--night);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.48);
 }
 
 .node-a { left: 22%; top: 31%; }
 .node-b { right: 19%; top: 25%; width: 8px; height: 8px; }
-.node-c { left: 50%; top: 49%; width: 19px; height: 19px; background: white; }
+.node-c { left: 50%; top: 49%; width: 17px; height: 17px; background: white; }
 .node-d { left: 27%; bottom: 24%; width: 8px; height: 8px; }
 .node-e { right: 24%; bottom: 22%; }
 
 .orbit {
   position: absolute;
-  border: 1px solid rgba(77, 219, 197, 0.48);
+  border: 1px solid rgba(255, 255, 255, 0.26);
   border-radius: 50%;
 }
 
@@ -291,7 +291,7 @@ a {
 
 .conference {
   display: grid;
-  grid-template-columns: 110px 1fr auto;
+  grid-template-columns: 110px 1fr;
   gap: 30px;
   align-items: center;
   padding: 34px 0;
@@ -319,17 +319,9 @@ a {
   font-size: 0.87rem;
 }
 
-.conference-mark {
-  color: rgba(21, 36, 50, 0.12);
-  font-family: var(--font-geist-mono), monospace;
-  font-size: 3.3rem;
-  font-weight: 700;
-  letter-spacing: -0.08em;
-}
-
 .research,
 .work {
-  padding: 130px 0;
+  padding: 116px 0;
 }
 
 .section-heading {
@@ -340,10 +332,10 @@ a {
 
 .section-heading h2 {
   margin: 18px 0 0;
-  font-size: clamp(2.45rem, 5vw, 4.9rem);
-  line-height: 1.02;
-  letter-spacing: -0.065em;
-  font-weight: 540;
+  font-size: clamp(2.3rem, 4.4vw, 4.25rem);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+  font-weight: 590;
 }
 
 .research-body {
@@ -423,8 +415,8 @@ a {
   margin: 12px 0 16px;
   font-size: clamp(1.45rem, 3vw, 2.25rem);
   line-height: 1.16;
-  letter-spacing: -0.045em;
-  font-weight: 570;
+  letter-spacing: -0.035em;
+  font-weight: 600;
 }
 
 .work-description {
@@ -456,7 +448,7 @@ a {
 }
 
 .footer {
-  padding: 102px 0 28px;
+  padding: 92px 0 28px;
   background: var(--night);
   color: white;
 }
@@ -474,10 +466,10 @@ a {
 .footer h2 {
   max-width: 800px;
   margin: 20px 0 28px;
-  font-size: clamp(2.6rem, 6vw, 5.8rem);
-  line-height: 0.98;
-  letter-spacing: -0.065em;
-  font-weight: 520;
+  font-size: clamp(2.4rem, 5vw, 4.8rem);
+  line-height: 1.04;
+  letter-spacing: -0.045em;
+  font-weight: 580;
 }
 
 .email-link {
@@ -592,10 +584,6 @@ a {
   .conference {
     grid-template-columns: 56px 1fr;
     gap: 14px;
-  }
-
-  .conference-mark {
-    display: none;
   }
 
   .research,

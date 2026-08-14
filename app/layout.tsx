@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       "Finding what survives across power-system models, from oscillator networks to engineering-grade simulation.",
     images: [
       {
-        url: "/moosung-kim-og.png",
+        url: "/og.png",
         width: 1200,
         height: 630,
         alt: "Moosung Kim, power systems and nonlinear dynamics researcher",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/moosung-kim-og.png"],
+    images: ["/og.png"],
   },
 };
 

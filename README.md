@@ -23,5 +23,4 @@ npm test
 - `app/page.tsx` — profile and research content
 - `app/globals.css` — visual system and responsive layout
 - `app/layout.tsx` — page metadata and social-preview settings
-- `public/moosung-kim-og.png` — social-preview card
-
+- `public/og.png` — social-preview card

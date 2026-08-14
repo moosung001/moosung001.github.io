@@ -12,7 +12,7 @@ const work = [
     eyebrow: "Accepted paper",
     title: "Frequency synchronization analysis of an oscillator-based power grid",
     description:
-      "How inertia and network position jointly shape frequency vulnerability across the KPG-193 power grid.",
+      "How inertia and network position jointly shape frequency vulnerability across the Korean power grid.",
     meta: "New Physics: Sae Mulli · 2026",
     href: "https://github.com/moosung001/kpg-swing-analysis",
     label: "View research code",
@@ -20,7 +20,7 @@ const work = [
   {
     number: "02",
     eyebrow: "Research software",
-    title: "KPG-193 Swing Simulator",
+    title: "Power Grid Swing Simulator",
     description:
       "An interactive simulator for exploring disturbance propagation, frequency response, synchronization, and line flows.",
     meta: "Python · Streamlit · Network science",
@@ -48,7 +48,7 @@ export default function Home() {
     <main>
       <nav className="nav shell" aria-label="Primary navigation">
         <a className="wordmark" href="#top" aria-label="Moosung Kim, home">
-          MK<span>.</span>
+          Moosung Kim
         </a>
         <div className="nav-links">
           <a href="#research">Research</a>
@@ -109,7 +109,6 @@ export default function Home() {
           <h2 id="conference-title">Oscillator Centric Analysis of Power Grid Stability</h2>
           <p>Poster presentation · August 2026 · with Heetae Kim</p>
         </div>
-        <div className="conference-mark" aria-hidden="true">R26</div>
       </section>
 
       <section className="research shell" id="research">

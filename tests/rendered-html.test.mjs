@@ -12,6 +12,8 @@ test("the research profile contains its essential public information", async () 
   assert.match(page, /Moosung Kim/);
   assert.match(page, /RHINO 2026/);
   assert.match(page, /Grid Complexity Lab/);
+  assert.match(page, /Korean power grid/);
+  assert.match(page, /Power Grid Swing Simulator/);
   assert.match(page, /rlaan33@kentech\.ac\.kr/);
   assert.match(page, /0009-0008-3371-724X/);
 });
@@ -19,7 +21,7 @@ test("the research profile contains its essential public information", async () 
 test("metadata includes the social-preview card", async () => {
   const layout = await readFile(layoutUrl, "utf8");
 
-  assert.match(layout, /moosung-kim-og\.png/);
+  assert.match(layout, /\/og\.png/);
   assert.match(layout, /summary_large_image/);
 });
 
@@ -29,4 +31,3 @@ test("starter-only dependencies are absent", async () => {
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
   assert.doesNotMatch(packageJson, /site-creator-vinext-starter/);
 });
-
