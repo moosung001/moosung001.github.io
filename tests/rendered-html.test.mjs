@@ -11,6 +11,7 @@ test("the research profile contains its essential public information", async () 
 
   assert.match(page, /Moosung Kim/);
   assert.match(page, /RHINO 2026/);
+  assert.match(page, /Poster in progress/);
   assert.match(page, /Grid Complexity Lab/);
   assert.match(page, /Korean power grid/);
   assert.match(page, /Power Grid Swing Simulator/);

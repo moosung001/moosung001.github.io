@@ -81,23 +81,21 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="network-card" aria-label="Abstract model hierarchy diagram">
-          <div className="network-grid" aria-hidden="true" />
-          <span className="node node-a" aria-hidden="true" />
-          <span className="node node-b" aria-hidden="true" />
-          <span className="node node-c" aria-hidden="true" />
-          <span className="node node-d" aria-hidden="true" />
-          <span className="node node-e" aria-hidden="true" />
-          <span className="orbit orbit-a" aria-hidden="true" />
-          <span className="orbit orbit-b" aria-hidden="true" />
-          <div className="model-scale">
-            <span>OSCILLATOR</span>
-            <span className="scale-line" aria-hidden="true" />
-            <span>GRID</span>
+        <div className="poster-slot" aria-label="RHINO 2026 poster preview placeholder">
+          <div className="poster-sheet">
+            <div className="poster-sheet-topline">
+              <span>RHINO 2026</span>
+              <span>Poster presentation</span>
+            </div>
+            <div className="poster-sheet-body">
+              <p>Poster in progress</p>
+              <h2>Oscillator Centric Analysis of Power Grid Stability</h2>
+              <span>Moosung Kim · Heetae Kim</span>
+            </div>
           </div>
-          <div className="card-caption">
-            <span>Research focus</span>
-            <p>Reduced-order insight, tested against detailed dynamics.</p>
+          <div className="poster-slot-note">
+            <span>Preview coming soon</span>
+            <p>The completed poster will open in a full-size viewer.</p>
           </div>
         </div>
       </section>
