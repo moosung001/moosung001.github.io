@@ -13,26 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Moosung Kim — Power Systems Researcher",
+  title: "Moosung Kim",
   description:
-    "Moosung Kim studies power-grid frequency dynamics, nonlinear synchronization, complex networks, and model hierarchy validation at KENTECH.",
-  openGraph: {
-    title: "Moosung Kim — Power Systems Researcher",
-    description:
-      "Finding what survives across power-system models, from oscillator networks to engineering-grade simulation.",
-    images: [
-      {
-        url: "/og.png",
-        width: 1200,
-        height: 630,
-        alt: "Moosung Kim, power systems and nonlinear dynamics researcher",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    images: ["/og.png"],
-  },
+    "Moosung Kim is an integrated Master's and Doctoral student in the Grid Complexity Lab at KENTECH.",
 };
 
 export default function RootLayout({

@@ -11,7 +11,8 @@ test("the research profile contains its essential public information", async () 
 
   assert.match(page, /Moosung Kim/);
   assert.match(page, /RHINO 2026/);
-  assert.match(page, /Poster in progress/);
+  assert.match(page, /Poster preview/);
+  assert.match(page, /In progress/);
   assert.match(page, /Grid Complexity Lab/);
   assert.match(page, /Korean power grid/);
   assert.match(page, /Power Grid Swing Simulator/);
@@ -19,11 +20,11 @@ test("the research profile contains its essential public information", async () 
   assert.match(page, /0009-0008-3371-724X/);
 });
 
-test("metadata includes the social-preview card", async () => {
+test("metadata is factual and does not use the old slogan", async () => {
   const layout = await readFile(layoutUrl, "utf8");
 
-  assert.match(layout, /\/og\.png/);
-  assert.match(layout, /summary_large_image/);
+  assert.match(layout, /title: "Moosung Kim"/);
+  assert.doesNotMatch(layout, /Finding what survives/);
 });
 
 test("starter-only dependencies are absent", async () => {
