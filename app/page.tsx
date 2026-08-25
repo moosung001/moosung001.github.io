@@ -1,3 +1,5 @@
+import PosterPreview from "./PosterPreview";
+
 const interests = [
   "Power system dynamics",
   "Frequency stability",
@@ -67,14 +69,14 @@ export default function Home() {
         </div>
 
         <aside className="poster-preview" aria-labelledby="poster-title">
-          <div className="poster-placeholder" aria-hidden="true">
-            <span>Poster preview</span>
-            <strong>In progress</strong>
-          </div>
+          <PosterPreview />
           <p className="item-type">RHINO 2026 poster</p>
-          <h2 id="poster-title">Oscillator Centric Analysis of Power Grid Stability</h2>
-          <p>Moosung Kim · Heetae Kim · August 2026</p>
-          <p className="poster-note">The completed poster will be added here.</p>
+          <h2 id="poster-title">Oscillator-Centric Analysis of Power Grid Stability</h2>
+          <p>Moosung Kim · Heetae Kim · Yokohama · August 2026</p>
+          <div className="poster-links">
+            <a href="/rhino-2026-poster-moosung-kim.pdf" target="_blank" rel="noreferrer">View PDF</a>
+            <a href="/rhino-2026-poster-moosung-kim.pdf" download>Download</a>
+          </div>
         </aside>
       </section>
 
