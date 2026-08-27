@@ -27,6 +27,13 @@ test("metadata is factual and does not use the old slogan", async () => {
   assert.doesNotMatch(layout, /Finding what survives/);
 });
 
+test("the public site includes privacy-friendly page analytics", async () => {
+  const layout = await readFile(layoutUrl, "utf8");
+
+  assert.match(layout, /https:\/\/moosung001\.goatcounter\.com\/count/);
+  assert.match(layout, /https:\/\/gc\.zgo\.at\/count\.js/);
+});
+
 test("starter-only dependencies are absent", async () => {
   const packageJson = await readFile(packageUrl, "utf8");
 
