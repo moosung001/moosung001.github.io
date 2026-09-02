@@ -18,6 +18,10 @@ test("the research profile contains its essential public information", async () 
   assert.match(page, /Power Grid Swing Simulator/);
   assert.match(page, /rlaan33@kentech\.ac\.kr/);
   assert.match(page, /0009-0008-3371-724X/);
+  assert.match(
+    page,
+    /<a href="https:\/\/www\.linkedin\.com\/in\/moosung-kim-hi\/" target="_blank" rel="noreferrer">LinkedIn<\/a>/,
+  );
 });
 
 test("metadata is factual and does not use the old slogan", async () => {

@@ -65,6 +65,7 @@ export default function Home() {
             <a href="mailto:rlaan33@kentech.ac.kr">Email</a>
             <a href="https://github.com/moosung001" target="_blank" rel="noreferrer">GitHub</a>
             <a href="https://orcid.org/0009-0008-3371-724X" target="_blank" rel="noreferrer">ORCID</a>
+            <a href="https://www.linkedin.com/in/moosung-kim-hi/" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
         </div>
 
