@@ -10,11 +10,12 @@ const interests = [
 
 const work = [
   {
-    type: "Accepted paper",
+    type: "Published paper",
     title: "Frequency synchronization analysis of an oscillator-based power grid",
     description:
       "A study of how inertia and network position shape frequency vulnerability across the Korean power grid.",
-    meta: "New Physics: Sae Mulli · 2026",
+    meta: "New Physics: Sae Mulli 76, 691–704 (2026)",
+    paperHref: "https://doi.org/10.3938/NPSM.76.691",
     href: "https://github.com/moosung001/kpg-swing-analysis",
     label: "Code",
   },
@@ -106,6 +107,9 @@ export default function Home() {
               <p className="work-description">{item.description}</p>
               <div className="work-details">
                 <span>{item.meta}</span>
+                {item.paperHref ? (
+                  <a href={item.paperHref} target="_blank" rel="noreferrer">Paper</a>
+                ) : null}
                 {item.href && item.label ? (
                   <a href={item.href} target="_blank" rel="noreferrer">{item.label}</a>
                 ) : null}
